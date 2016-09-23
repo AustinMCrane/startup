@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 # Boostrap for styling and responsive web design
 gem 'bootstrap-sass', '~> 3.3.6'
+# Rspec for unit & integration testing
+gem 'rspec-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
