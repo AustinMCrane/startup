@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Devise for authentication and user model
 gem 'devise'
 gem 'omniauth'
+gem 'omniauth-facebook'
 # authorization for user model
 gem 'cancan'
 # Boostrap for styling and responsive web design

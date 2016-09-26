@@ -46,8 +46,8 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.action_mailer.smtp_settings = {
-    :user_name => 'ennovar',
-    :password => 'ennovaristhebest2016',
+    :user_name => ENV['STRIPE_USERNAME'],
+    :password => ENV['STRIPE_PASSWORD'],
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
