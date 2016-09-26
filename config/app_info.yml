@@ -1,3 +1,4 @@
 company:
   name: "BootstrApp"
-
+analytics:
+  tracking_id: "UA-79006393-2"

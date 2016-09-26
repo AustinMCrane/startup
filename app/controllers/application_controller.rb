@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   def set_app_info
     info = YAML.load_file("#{Rails.root}/config/app_info.yml")
-    @company_info = info["company"]
+    @company_info = info['company']
+    @analytics = info['analytics']
   end
 end
