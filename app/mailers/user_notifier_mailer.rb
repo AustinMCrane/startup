@@ -1,10 +1,11 @@
 class UserNotifierMailer < ApplicationMailer
-  default :from => 'any_from_address@example.com'
+  default :from => 'bootstrap@startup.ennovar.io'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
-  def send_signup_email(user)
+  def send_signup_email(user, email)
     @user = user
+    @email = email
     mail( :to => @user.email,
-    :subject => 'Thanks for signing up for our amazing app' )
+    :email => email.subject )
   end
 end

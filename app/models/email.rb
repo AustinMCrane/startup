@@ -7,7 +7,7 @@ class Email < ApplicationRecord
     puts @users.to_yaml
     @users.each do |user|
       puts user.email
-      UserNotifierMailer::send_signup_email(user)
+      UserNotifierMailer::send_signup_email(user, self).deliver_now
     end
   end
 end
