@@ -17,3 +17,6 @@ test:
 production:
   <<: *default
   database: boostrapp_production
+  username: postgres
+  password:
+  host: db
