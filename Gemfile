@@ -41,6 +41,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rspec-rails'
 # Rails Admin Panel
 gem 'rails_admin', '~> 1.0'
+# Stripe for payments
+gem 'stripe'
+########################################################
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
