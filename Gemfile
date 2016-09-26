@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 ###################
 # Devise for authentication and user model
 gem 'devise'
+# authorization for user model
+gem 'cancan'
 # Boostrap for styling and responsive web design
 gem 'bootstrap-sass', '~> 3.3.6'
 # Rspec for unit & integration testing
