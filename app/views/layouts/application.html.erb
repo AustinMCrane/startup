@@ -11,8 +11,11 @@
   <body>
     <!-- navigation bar -->
     <%= render 'layouts/navbar' %>
-    <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <%= yield %>
   </body>

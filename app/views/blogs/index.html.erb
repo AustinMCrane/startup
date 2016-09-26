@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Blogs</h1>
-
+<div class="container">
    <% @blogs.each do |blog| %>
+     <div class="row">
      <h3><%= blog.title %></h3>
      <p><%= blog.body %></p>
+     </div>
    <% end %>
+</div>
 <%= link_to 'New Blog', new_blog_path %>
