@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
@@ -40,6 +39,8 @@ gem 'cancan'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Rspec for unit & integration testing
 gem 'rspec-rails'
+# Rails Admin Panel
+gem 'rails_admin', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
