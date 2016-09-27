@@ -43,6 +43,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rails_admin', '~> 1.0'
 # Stripe for payments
 gem 'stripe'
+# Markdown support
+gem 'redcarpet'
 ########################################################
 
 group :development, :test do

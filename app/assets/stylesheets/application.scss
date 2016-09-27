@@ -16,3 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.btn-primary {
+  background-color: #D91A3D;
+  border: none;
+  &:hover {
+    background-color: #D91A3D;
+  }
+}

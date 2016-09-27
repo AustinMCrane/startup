@@ -1,6 +1,10 @@
+require 'redcarpet'
+require 'redcarpet/render_strip'
+
 class BlogsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, only: [:new, :edit, :update, :delete]
+  before_action :set_markdown, only: [:index, :show]
 
   # GET /blogs
   # GET /blogs.json
@@ -66,6 +70,11 @@ class BlogsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
       @blog = Blog.find(params[:id])
+    end
+
+    # set the markdown render for use in the html with @markdown.render()
+    def set_markdown
+      @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
