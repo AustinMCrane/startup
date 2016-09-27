@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BootstrApp</title>
+    <title><%= @company_info["name"] %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +16,8 @@
       ga('create', '<%= @analytics['tracking_id'] %>', 'auto');
       ga('send', 'pageview');
 
-    </script>  </head>
+    </script>
+  </head>
 
   <body>
     <!-- navigation bar -->
