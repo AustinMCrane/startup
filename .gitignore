@@ -19,3 +19,5 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+# the environment file will hold the production keys for stripe and sendgrid
+.env

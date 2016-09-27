@@ -1,4 +1,5 @@
 company:
   name: "BootstrApp"
 analytics:
+  # google analytics id
   tracking_id: "UA-79006393-2"

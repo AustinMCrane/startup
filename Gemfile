@@ -39,8 +39,6 @@ gem 'omniauth-facebook'
 gem 'cancan'
 # Boostrap for styling and responsive web design
 gem 'bootstrap-sass', '~> 3.3.6'
-# Rspec for unit & integration testing
-gem 'rspec-rails'
 # Rails Admin Panel
 gem 'rails_admin', '~> 1.0'
 # Stripe for payments
@@ -50,6 +48,8 @@ gem 'stripe'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # Rspec for unit & integration testing
+  gem 'rspec-rails'
 end
 
 group :development do

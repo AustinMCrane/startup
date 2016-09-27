@@ -4,9 +4,7 @@ class Email < ApplicationRecord
 
   def send_email
     @users = self.users
-    puts @users.to_yaml
     @users.each do |user|
-      puts user.email
       UserNotifierMailer::send_signup_email(user, self).deliver_now
     end
   end
