@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160927205806) do
+ActiveRecord::Schema.define(version: 20160928135824) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,23 @@ ActiveRecord::Schema.define(version: 20160927205806) do
     t.integer "user_id",  null: false
     t.index ["email_id", "user_id"], name: "index_emails_users_on_email_id_and_user_id", using: :btree
     t.index ["user_id", "email_id"], name: "index_emails_users_on_user_id_and_email_id", using: :btree
+  end
+
+  create_table "plans", force: :cascade do |t|
+    t.integer  "amount"
+    t.string   "interval",   default: "month"
+    t.string   "name"
+    t.string   "currency",   default: "usd"
+    t.string   "stripe_id"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "plan_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
