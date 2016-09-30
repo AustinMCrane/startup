@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :subscriptions
   root 'home#index'
+  post '/beta_signup' => 'home#beta_signup'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :blogs

@@ -19,7 +19,7 @@
     function update() {
       $.ajax({
         type: 'GET',
-        url: 'http://api.giphy.com/v1/gifs/search?q=meme&api_key=dc6zaTOxFJmzC',
+        url: 'http://api.giphy.com/v1/gifs/search?q=funny+cats&api_key=dc6zaTOxFJmzC',
         success: function(data) {
           console.log(data.data[last_index].images.downsized.url);
           $('#giphy').empty();
