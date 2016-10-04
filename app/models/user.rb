@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
   has_many :subscriptions
   # has_many :plans, through: :subscription
+  
+  # check if a customer exists through stripe
+  def is_a_customer?
+
+  end
 end
