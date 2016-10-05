@@ -1,2 +1,4 @@
+## SubscriptionsHelper
+#
 module SubscriptionsHelper
 end

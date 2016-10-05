@@ -7,6 +7,7 @@ module StripeHelper
   end
 
   # search through lists of all customers for customer with email
+  # * +email+ - the email address the customer used to create stripe account
   def self.customer_with_email(email)
     all_customers.each do |customer|
       return customer if email == customer.email
@@ -14,6 +15,7 @@ module StripeHelper
   end
 
   # search through lists of all customers for customer with customer_id
+  # * +customer_id+ - stripe customer id
   def self.customer_with_id(customer_id)
     # this could be simplified to just query stripe by customer id
     all_customers.each do |customer|

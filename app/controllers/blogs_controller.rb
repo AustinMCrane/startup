@@ -1,10 +1,13 @@
 require 'redcarpet'
 require 'redcarpet/render_strip'
 
+## BlogsController
+# manages blogs for the startup
 class BlogsController < ApplicationController
   # cancan authorization check if admin
   load_and_authorize_resource
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  # make markdown renderer available
   before_action :set_markdown, only: [:index, :show]
 
   # GET /blogs

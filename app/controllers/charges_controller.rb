@@ -1,5 +1,5 @@
-##
-# i followed this tutorial https://stripe.com/docs/checkout/rails
+## ChargesController
+# maybe used if we want to implement products
 class ChargesController < ApplicationController
   def new
   end

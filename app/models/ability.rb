@@ -1,3 +1,5 @@
+## Ability
+# used for authorization
 class Ability
   include CanCan::Ability
 

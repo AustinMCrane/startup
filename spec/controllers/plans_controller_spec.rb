@@ -11,7 +11,7 @@ RSpec.describe PlansController, type: :controller do
 
   describe "GET #show" do
     it "returns http success" do
-      get :show
+      get show
       expect(response).to have_http_status(:success)
     end
   end
@@ -25,7 +25,7 @@ RSpec.describe PlansController, type: :controller do
 
   describe "GET #subscribe" do
     it "returns http success" do
-      get :subscribe
+      post :subscribe
       expect(response).to have_http_status(:success)
     end
   end

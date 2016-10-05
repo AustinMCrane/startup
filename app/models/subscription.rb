@@ -15,6 +15,7 @@ class Subscription < ApplicationRecord
         :plan => plan.id
       )
     else
+      # TODO: subscription exists in stripe, also before_save to before_create
       # edit the subscription
     end
   end
