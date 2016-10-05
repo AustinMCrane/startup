@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: emails
+#
+#  id         :integer          not null, primary key
+#  subject    :string
+#  body       :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 ## Email
 # a way to keep track of how many emails we have sent
 # and give persistance

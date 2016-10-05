@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: subscriptions
+#
+#  id         :integer          not null, primary key
+#  plan_id    :integer
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 ## Subscription
 # a relationship between a user and their plan that they are
 # subscribed to

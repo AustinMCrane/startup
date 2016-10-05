@@ -46,6 +46,8 @@ gem 'stripe'
 # Markdown support
 gem 'redcarpet'
 gem 'rb-readline'
+gem 'annotate'
+
 ########################################################
 
 group :development, :test do

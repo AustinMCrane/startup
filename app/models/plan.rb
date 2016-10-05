@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: plans
+#
+#  id         :integer          not null, primary key
+#  amount     :integer
+#  interval   :string           default("month")
+#  name       :string
+#  currency   :string           default("usd")
+#  stripe_id  :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 ## Plan
 # reocurring stripe plan
 class Plan < ApplicationRecord
