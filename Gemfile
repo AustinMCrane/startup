@@ -41,10 +41,11 @@ gem 'cancan'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Rails Admin Panel
 gem 'rails_admin', '~> 1.0'
-# Stripe for payments
+# Stripe payments
 gem 'stripe'
 # Markdown support
 gem 'redcarpet'
+gem 'rb-readline'
 ########################################################
 
 group :development, :test do

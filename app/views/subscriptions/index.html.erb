@@ -1,0 +1,7 @@
+<div class="container">
+<% @plans.each do |plan| %>
+  <div class="list-group">
+    <%= link_to plan.name, subscriptions_path(plan), class: 'list-group-item' %>
+  </div>
+<% end %>
+</div>

@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   skip_before_action :verify_authenticity_token
 
+  # GET: /
+  # used for the landing page
   def index
   end
 

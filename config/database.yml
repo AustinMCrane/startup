@@ -2,10 +2,6 @@ default: &default
   adapter: postgresql
   pool: 5
   encoding: unicode
-  host: dokku.atai.lan
-  port: 32772
-  username: ennovarplayerone
-  password: ennovaristhebest
 
 development:
   <<: *default

@@ -1,16 +1,17 @@
 class SubscriptionsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_subscription, only: [:show, :edit, :update, :destroy]
 
   # GET /subscriptions
   # GET /subscriptions.json
-  # def index
-  #   redirect_to :root_path
-  #   @subscriptions = Subscription.all
-  # end
-  #
+  def index
+    @plans = Plan.all
+  end
+
   # GET /subscriptions/1
   # GET /subscriptions/1.json
   def show
+    @plan = Plan.find(params[:id])
   end
 
   # GET /subscriptions/new

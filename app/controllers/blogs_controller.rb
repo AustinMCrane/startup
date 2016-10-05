@@ -2,6 +2,7 @@ require 'redcarpet'
 require 'redcarpet/render_strip'
 
 class BlogsController < ApplicationController
+  # cancan authorization check if admin
   load_and_authorize_resource
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :set_markdown, only: [:index, :show]
