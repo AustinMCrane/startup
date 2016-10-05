@@ -1,0 +1,4 @@
+## BlogsHelper
+#
+module BlogsHelper
+end

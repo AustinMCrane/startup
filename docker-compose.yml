@@ -1,0 +1,13 @@
+version: '2'
+services:
+  db:
+    build: ./database_image
+  api:
+    build: ./
+    #TODO: need to create this file .env and put your secretes in there
+    env_file:
+      - .env
+    ports:
+      - "80:8000"
+    depends_on:
+      - db

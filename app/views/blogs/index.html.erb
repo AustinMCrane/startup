@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Things We Are Thinking</h1>
+<div class="container">
+   <% @blogs.each do |blog| %>
+     <div class="row">
+     <h3><%= blog.title %></h3>
+     <!-- render markdown -->
+     <%= raw @markdown.render(blog.body) %>
+     </div>
+   <% end %>
+</div>

@@ -1,0 +1,4 @@
+## PlansHelper
+#
+module PlansHelper
+end

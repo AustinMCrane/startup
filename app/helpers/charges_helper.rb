@@ -1,0 +1,4 @@
+## ChargesHelper
+#
+module ChargesHelper
+end
