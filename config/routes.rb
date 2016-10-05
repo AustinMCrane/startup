@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
-  get 'plans/index'
 
-  get 'plans/show'
-
-  get 'plans/edit'
-
-  get 'plans/subscribe'
-
+  get 'plans' => 'plans#index'
+  get 'plans/:id' => 'plans#show', as: :plan_path
+  get 'plans/:id/edit' => 'plans#edit'
+  post 'plans/:id/subscribe' => 'plans#subscribe', as: :subscribe_path
   root 'home#index'
-  resources :subscriptions
   # home page
   post '/beta_signup' => 'home#beta_signup'
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

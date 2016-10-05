@@ -9,8 +9,11 @@ class Subscription < ApplicationRecord
   # before save subscribe user to the plan
   def add_user_to_plan
     if new_record?
-      if user.is_a_customer?
-      end
+      # need to check if the user is a customer and if not redirect to create customer
+      Stripe::Subscription.create(
+        :customer => user.stripe_id,
+        :plan => plan.id
+      )
     else
       # edit the subscription
     end
