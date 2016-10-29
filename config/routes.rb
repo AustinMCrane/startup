@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :products
   # plan that can be subscribed to
   get 'plans' => 'plans#index'
   get 'plans/:id' => 'plans#show', as: :plan_path

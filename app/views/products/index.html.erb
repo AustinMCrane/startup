@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Products</h1>
+
+   <% @products.each do |product| %>
+     <div class="card col-md-3">
+        <h4><%= product.name %></h4>
+        <strong><%= product.price %></strong>
+        <p><%= link_to 'Show', product %></p>
+        <p><%= link_to 'Edit', edit_product_path(product) %></p>
+        <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+     </div>
+    <% end %>
+<br>
+
+<%= link_to 'New Product', new_product_path %>
