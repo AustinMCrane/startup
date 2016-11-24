@@ -1,5 +1,5 @@
 <div id="wrapper" class="container-fluid">
-  <div id="hero" class="row">
+  <div class="row sub-title">
     <div>
       <h3 class="list-group-item-heading white">Popular Items</h3>
     </div>
@@ -7,9 +7,11 @@
   <div id="popular-items" class="row">
     <div class="list-group">
       <% @products.each do |product| %>
+          <%= link_to root_path do %>
           <div class="col-md-4">
             <%= render 'products/list_item', product: product %>
           </div>
+          <% end %>
       <% end %>
     </div>
   </div>

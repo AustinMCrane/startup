@@ -39,11 +39,23 @@ nav.navbar.navbar-default {
 #popular-items {
   padding-top: 8px;
 }
+a {
+  h* {
+    color: $font-regular;
+  }
+}
+a:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
 
 .product-item {
 }
+.price {
+  color: #33aa33;
+}
 
-#hero {
-  padding-left: 8px;
-  background-color: $accent-color;
+.sub-title {
+  padding: 8px;
+  background-color: lighten($accent-color, 15%);
 }

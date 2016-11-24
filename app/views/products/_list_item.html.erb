@@ -3,8 +3,5 @@
     <h3><%= product.title %></h3>
     <%= image_tag product.image.url(:medium) %>
   </div>
-  <p>
-    <%= product.description %>
-  </p>
-  <strong>$<%= product.price %></strong>
+  <p class="price">$<%= product.price %></p>
 </div>
