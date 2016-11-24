@@ -1,7 +1,10 @@
 # TODO: customize your startup!
 company:
-  name: "BootstrApp"
-  short_description: "A launch pad for startups!"
+  name: "Start It Up!"
+  short_description: "Product based startup platform"
 analytics:
   # google analytics id
   tracking_id: "UA-79006393-2"
+
+status:
+  launched: no

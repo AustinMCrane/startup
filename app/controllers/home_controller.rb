@@ -6,6 +6,11 @@ class HomeController < ApplicationController
   # GET: /
   # used for the landing page
   def index
+    # if launched then show landing page instead of signup page
+    if StartupHelper.launched?
+      @products = Product.all
+      render 'home/landing_page'
+    end
   end
 
   # POST: /beta_signup

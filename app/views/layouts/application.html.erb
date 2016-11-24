@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= @company_info["name"] %></title>
+    <title><%= StartupHelper.company["name"] %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
     <%= csrf_meta_tags %>
 
@@ -13,7 +13,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       // put your tracking_id in app_info.yml
-      ga('create', '<%= @analytics['tracking_id'] %>', 'auto');
+      ga('create', '<%= StartupHelper.analytics['tracking_id'] %>', 'auto');
       ga('send', 'pageview');
 
     </script>

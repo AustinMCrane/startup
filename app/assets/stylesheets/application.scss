@@ -15,11 +15,16 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "colors";
 
+html,
+body {
+  font-family: $font-regular;
+}
 .btn-primary {
-  background-color: #D91A3D;
+  background-color: $accent-color;
   border: none;
   &:hover {
-    background-color: #D91A3D;
+    background-color: $accent-color;
   }
 }
