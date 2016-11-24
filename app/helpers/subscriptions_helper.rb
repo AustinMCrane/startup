@@ -1,4 +1,0 @@
-## SubscriptionsHelper
-#
-module SubscriptionsHelper
-end

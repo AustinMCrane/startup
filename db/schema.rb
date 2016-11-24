@@ -43,29 +43,12 @@ ActiveRecord::Schema.define(version: 20161123235739) do
     t.index ["user_id", "email_id"], name: "index_emails_users_on_user_id_and_email_id", using: :btree
   end
 
-  create_table "plans", force: :cascade do |t|
-    t.integer  "amount"
-    t.string   "interval",   default: "month"
-    t.string   "name"
-    t.string   "currency",   default: "usd"
-    t.string   "stripe_id"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-  end
-
   create_table "products", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
     t.decimal  "price"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "subscriptions", force: :cascade do |t|
-    t.integer  "plan_id"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

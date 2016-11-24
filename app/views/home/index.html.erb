@@ -5,8 +5,8 @@
     data-vide-bg="mp4: https://s3-us-west-2.amazonaws.com/coverr/mp4/Working-Space.mp4, webm: https://s3-us-west-2.amazonaws.com/coverr/webm/Working-Space.webm, poster: https://s3-us-west-2.amazonaws.com/coverr/poster/Working-Space.jpg"
     data-vide-options="posterType: jpg, loop: true, muted: false, position: 0% 0%">
       <div id="intro-banner-content" class="col col-md-4 col-md-offset-4">
-        <h1><%= StartupHelper.company["name"] %></h1>
-        <h3><%= StartupHelper.company["short_description"] %><h3>
+        <h1><%= StartupHelper.company['name'] %></h1>
+        <h3><%= StartupHelper.company['short_description'] %></h3>
         <form action="/beta_signup" method="post">
           <div id="call-to-action" class="col col-md-8 col-md-offset-2">
             <h4>Get notified when we launch!</h4>
@@ -16,6 +16,5 @@
           </div>
         </form>
       </div>
-    </div>
   </div>
 </div>
