@@ -40,9 +40,7 @@ nav.navbar.navbar-default {
   padding-top: 8px;
 }
 a {
-  h* {
-    color: $font-regular;
-  }
+  color: $font-regular !important;
 }
 a:hover {
   text-decoration: none !important;

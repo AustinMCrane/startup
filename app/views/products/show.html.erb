@@ -1,0 +1,20 @@
+<div id="wrapper" class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="text-center">
+        <%= image_tag @product.image.url(:medium) %>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3><%= @product.title %></h3>
+      <h5>$<%= @product.price %></h5>
+      <hr>
+      <p>
+        <%= @product.description %>
+      </p>
+      <button id="buy" class="btn btn-md btn-success">
+        Add To Cart
+      </button>
+    </div>
+  </div>
+</div>
