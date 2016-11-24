@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'paperclip', '~> 5.0.0'
+
 # authorization for user model
 gem 'cancan'
 # Boostrap for styling and responsive web design

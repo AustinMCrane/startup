@@ -1,5 +1,8 @@
 <div class="product-item list-group-item">
-  <h4><%= product.title %></h4>
+  <div class="text-center">
+    <h3><%= product.title %></h3>
+    <%= image_tag product.image.url(:medium) %>
+  </div>
   <p>
     <%= product.description %>
   </p>
