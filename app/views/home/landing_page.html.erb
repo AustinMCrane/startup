@@ -7,7 +7,7 @@
   <div id="popular-items" class="row">
     <div class="list-group">
       <% @products.each do |product| %>
-          <%= link_to root_path do %>
+          <%= link_to product_path(product) do %>
           <div class="col-md-4">
             <%= render 'products/list_item', product: product %>
           </div>

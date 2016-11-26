@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :blogs
-  get '/products/:id', to: 'products#show'
+  get '/products/:id', to: 'products#show', as: 'product'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

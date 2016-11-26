@@ -21,6 +21,7 @@ html,
 body {
   font-family: $font-regular;
 }
+
 .btn-primary {
   background-color: $accent-color;
   border: none;
@@ -28,6 +29,7 @@ body {
     background-color: $accent-color;
   }
 }
+
 #wrapper {
   background-color: $fore-ground;
   height: 100%;
