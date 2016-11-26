@@ -1,3 +1,2 @@
-# BootstrApp
-_a launch pad for startups_ 
+# Product Based Startup Boilerplate
 
